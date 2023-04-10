@@ -2,8 +2,8 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "Node16",
-    "baseUrl": "",
-    "rootDir": ".",
+    // "baseUrl": "",
+    // "rootDir": ".",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "target": "ES2021",
@@ -12,7 +12,10 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "include": ["**/*.ts"]
 }
