@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Next",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "outDir": "dist",
+    "sourceMap": true,
+    "module": "esnext",
+    "jsx": "preserve"
+  }
+}

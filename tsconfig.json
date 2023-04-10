@@ -15,7 +15,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "typeRoots": ["./node_modules/@types", "apps/priceFeed/src/types"]
   },
   "include": ["**/*.ts"]
 }

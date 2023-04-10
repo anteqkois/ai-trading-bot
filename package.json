@@ -1,14 +1,18 @@
 {
-  "name": "ai-trading-bot",
+  "name": "trading-bot",
   "version": "1.0.0",
   "description": "Trading bot which will use AI, vector database and othe modern technology to get the best profit from their trading strategy",
   "main": "index.js",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "nodemon",
-    "start": "node ./dist/app.js",
-    "build": "rollup -c --bundleConfigAsCjs",
-    "watch": "rollup -c -w --bundleConfigAsCjs",
-    "prettier": "prettier --write \"src\" --ignore-path .gitignore"
+    "dev": "turbo run dev --no-cache --force",
+    "lint": "turbo run lint",
+    "commit": "git add . && cz",
+    "postcommit": "git push",
+    "release": "standard-version"
   },
   "keywords": [
     "ai",
@@ -23,17 +27,12 @@
   "author": "Antoni Kois",
   "license": "ISC",
   "dependencies": {
-    "@binance/connector": "^2.0.1",
-    "bybit-api": "^3.5.5",
-    "dotenv": "^16.0.3",
-    "prettier": "^2.8.7",
-    "winston": "^3.8.2"
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.5.0"
   },
-  "devDependencies": {
-    "@types/node": "^18.15.11",
-    "nodemon": "^2.0.22",
-    "ts-node": "^10.9.1",
-    "tslib": "^2.5.0",
-    "typescript": "^5.0.4"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

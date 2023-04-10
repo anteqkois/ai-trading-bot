@@ -1,4 +1,4 @@
-import { spotClient, wsCallbacks } from '../services/binanceClient'
+import { spotClient, wsCallbacks } from '../lib/binanceClient'
 
 export const btcProceTicker = () => {
   // all pairs
