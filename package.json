@@ -1,0 +1,36 @@
+{
+  "name": "ai-trading-bot",
+  "version": "1.0.0",
+  "description": "Trading bot which will use AI, vector database and othe modern technology to get the best profit from their trading strategy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node ./dist/app.js",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "watch": "rollup -c -w --bundleConfigAsCjs",
+    "prettier": "prettier --write \"src\" --ignore-path .gitignore"
+  },
+  "keywords": [
+    "ai",
+    "cryptocurrency",
+    "crypto",
+    "vector-database",
+    "openai",
+    "tradinf",
+    "trader",
+    "trading-bot"
+  ],
+  "author": "Antoni Kois",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "prettier": "^2.8.7"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}
