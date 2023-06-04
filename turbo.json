@@ -1,6 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
+    "start:dev": {
+      "cache": false,
+      "persistent": true
+    },
     "dev": {
       "cache": false,
       "persistent": true
@@ -12,6 +16,10 @@
     "lint": {
       "cache": false,
       "dependsOn": ["^lint"]
+    },
+    "format": {
+      "cache": false,
+      "dependsOn": ["^format"]
     }
   }
 }

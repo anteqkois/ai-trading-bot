@@ -1,8 +1,0 @@
-{
-  "extends": "@trading-bot/tsconfig/tsconfig.node.json",
-  "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "dist"
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts"],
-}

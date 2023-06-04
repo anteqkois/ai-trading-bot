@@ -1,15 +1,12 @@
 {
-  "name": "trading-bot",
+  "name": "qois",
   "version": "1.0.0",
   "description": "Trading bot which will use AI, vector database and othe modern technology to get the best profit from their trading strategy",
   "main": "index.js",
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
   "scripts": {
-    "dev": "turbo run dev --no-cache --force",
+    "dev": "turbo run dev start:dev --no-cache --force",
     "lint": "turbo run lint",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "commit": "git add . && cz",
     "postcommit": "git push",
     "release": "standard-version"
@@ -20,7 +17,7 @@
     "crypto",
     "vector-database",
     "openai",
-    "tradinf",
+    "trading",
     "trader",
     "trading-bot"
   ],
@@ -28,6 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^2.8.8",
     "standard-version": "^9.5.0"
   },
   "config": {

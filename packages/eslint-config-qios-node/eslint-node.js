@@ -49,16 +49,17 @@ module.exports = {
         allowSingleExtends: true,
       },
     ],
+    'class-methods-use-this': 'off',
   },
-  overrides: [
-    {
-      files: ['src/**/*Api.ts', 'src/**/*Validation.ts'],
-      rules: { 'import/group-exports': 'off', '@typescript-eslint/no-explicit-any': 'off' },
-    },
-    {
-      files: ['src/**/*Controller.ts'],
-      rules: { 'consistent-return': 'off' },
-    },
-  ],
+  // overrides: [
+  //   {
+  //     files: ['src/**/*Api.ts', 'src/**/*Validation.ts'],
+  //     rules: { 'import/group-exports': 'off', '@typescript-eslint/no-explicit-any': 'off' },
+  //   },
+  //   {
+  //     files: ['src/**/*Controller.ts'],
+  //     rules: { 'consistent-return': 'off' },
+  //   },
+  // ],
   ignorePatterns: ['lib', '**/*.js', '**/*.cjs', 'node_modules', '.turbo', 'dist', 'coverage', 'artefacts'],
 };

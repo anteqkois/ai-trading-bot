@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-trading-bot-node",
+  "name": "eslint-config-qois-node",
   "version": "0.0.0",
   "main": "eslint-node.js",
   "license": "MIT",
